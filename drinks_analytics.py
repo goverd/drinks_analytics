@@ -144,7 +144,7 @@ def explore_data():
     plt.xlim(xmin, xmax)
 
     fig1.savefig('plot1.png')
-    fig2.savefig('plo2.png')
+    fig2.savefig('plot2.png')
 
 def main():
     pass
