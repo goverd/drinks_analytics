@@ -1,0 +1,6 @@
+{
+  "name": "Drinks analytics",
+  "tagline": "",
+  "body": "# Project proposal for The Data Incubator\r\nRepo contains web scraper for drinksmixer.com, which pulled information on all the drinks and saved it in the hdf5 file.\r\nInitial analysis has been done producing two plots to support the project proposal.\r\n\r\n## Plot 1\r\nDistribution of calories per 1 oz of drink for all drinks with nutritional information.\r\n![Plot 1](https://github.com/goverd/drinks_analytics/blob/master/plot1.png).\r\n\r\n## Plot 2\r\nScatter plot of the drink ratings vs calorie per 1 oz for all drinks with nutritional information and more than 10 ratings.\r\n![Plot 2](https://github.com/goverd/drinks_analytics/blob/master/plot2.png).",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
