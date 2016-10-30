@@ -128,23 +128,23 @@ def explore_data():
     with_cal_info = drinks[(~drinks.cal_per_serving.isnull()) & (drinks.cal_per_serving < 200) & (drinks.rating_count > 10)]
 
     # Plot histogram of calories per serving
-    plt.figure(1)
-    plt.hist(with_cal_info.cal_per_serving, bins = 50)
+    fig1 = plt.figure(1)
+    plt.hist(with_cal_info.cal_per_serving, bins = 50, alpha = 0.6)
     plt.grid(True)
     plt.xlabel('Calories per serving (kcal / 1 oz)')
     plt.ylabel('Number of drinks')
     xmin, xmax = plt.xlim()
 
     # Plot ratings vs calories per serving
-    plt.figure(2)
-    plt.scatter(with_cal_info.cal_per_serving, with_cal_info.rating, alpha = 0.6, edgecolors='face', color = 'r', s = 30)
+    fig2 = plt.figure(2)
+    plt.scatter(with_cal_info.cal_per_serving, with_cal_info.rating, alpha = 0.4, edgecolors='face', color = 'r', s = 60)
     plt.grid(True)
     plt.xlabel('Calories per serving (kcal / 1 oz)')
     plt.ylabel('Rating of a drink out of 10')
     plt.xlim(xmin, xmax)
 
-    plt.show()
-
+    fig1.savefig('plot1.png')
+    fig2.savefig('plo2.png')
 
 def main():
     pass
